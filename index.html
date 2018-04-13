@@ -15,6 +15,19 @@
 		[v-cloak] {
 			 display: none;
 		 }
+		 body{
+		 	background-color: #723D46;
+		 }
+		 p{
+		 	color: white;
+		 }
+		 table tbody td{
+		 	text-align: center;
+		 	padding: 0px;
+		 }
+		 input[type=text]{
+		 	margin:0;
+		 }
 	</style>
 </head>
 
@@ -29,12 +42,20 @@
 				<tr v-for="result in results" v-cloak>
 					<td v-html="result.html">{{ result.html }}</td>
 					<td :value="result.code">
-						<input v-on:click="copy" type="text" v-model="result.code" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
+						<input v-on:click="copy" type="text" v-model="result.code">
 					</td>
 				</tr>
 			</table>
+			<hr>
+			<p>貴重なご意見をお聞かせ下さい。</p>
+			<form 　class="" action="index.html" method="post">
+				<input type="text" style="margin-bottom:5px" placeholder="絵文字">
+				<p>と検索したら</p>
+				<input type="text" style="margin-bottom:5px" placeholder=":emoji:">
+				<p>がべるできだ</p>
+				<input type="submit"href="#" style="color:white;font-size:15px;" class="button success expanded">
+			</form>
 		</div>
-
 	</div>
 </body>
 
