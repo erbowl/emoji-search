@@ -22,7 +22,7 @@ new Vue({
           // 最後にkeyupされてから一定時間次の入力がなかったら実行
           if (this.keyupStack.length === 0) {
             // 部分一致を可能にする(例: .*a.*b.*c.*)
-            var text = this.text.replace(/(:)/g, "");
+            var text = this.text.replace(/:/g, "");
             var buf = ".*" + text.replace(/(.)/g, "$1.*");
             var reg = new RegExp(buf);
 
