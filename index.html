@@ -47,13 +47,14 @@
 				</tr>
 			</table>
 			<hr>
-			<p>貴重なご意見をお聞かせ下さい。</p>
-			<form 　class="" action="index.html" method="post">
-				<input type="text" style="margin-bottom:5px" placeholder="絵文字">
+			<p style="font-weight:600">検索機能向上のために貴重なご意見をお聞かせ下さい。</p>
+			<form id="proposal" name="proposal" method="POST" netlify>
+				<input name="key" type="text" style="margin-bottom:5px" placeholder="絵文字" required>
 				<p>と検索したら</p>
-				<input type="text" style="margin-bottom:5px" placeholder=":emoji:">
+				<input name="value"type="text" style="margin-bottom:5px" placeholder=":emoji:" required>
 				<p>がべるできだ</p>
-				<input type="submit"href="#" style="color:white;font-size:15px;" class="button success expanded">
+				<div data-netlify-recaptcha></div>
+				<input type="submit" style="color:white;font-size:15px;" class="button success expanded">
 			</form>
 		</div>
 	</div>
