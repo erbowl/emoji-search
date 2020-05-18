@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "emojione": "3.1.7",
-    "foundation-sites": "6.4.4-rc1",
+    "foundation-sites": "6.6.3",
     "vue": "^2.5.2"
   },
   "devDependencies": {
